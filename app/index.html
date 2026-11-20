@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA 6 Trophy Guide &amp; Tracker</title>
+<meta name="description" content="An offline guide and tracker for all 55 GTA 6 trophies on PlayStation 5: a playable platinum plan, a roadmap, missable flags, and a cited guide for every trophy.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-top">
+    <div class="brand">
+      <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies &middot; 1 platinum, 2 gold, 6 silver, 46 bronze</p>
+      <h1>Leonida Legend</h1>
+      <p class="tagline">The platinum plan: what to do next, and what you could miss.</p>
+    </div>
+    <div class="masthead-actions">
+      <label class="spoiler-toggle" title="Hide story trophy names and descriptions until they are earned">
+        <input type="checkbox" id="spoilerToggle" checked>
+        <span class="toggle-knob" aria-hidden="true"></span>
+        <span>Spoiler-safe</span>
+      </label>
+      <button id="exportBtn" type="button">Export progress</button>
+      <label class="import-btn">Import progress<input id="importFile" type="file" accept="application/json,.json"></label>
+    </div>
+  </div>
+  <div class="progress-row">
+    <div class="progress-count"><strong id="progressCount">0 / 55</strong><span id="progressPct">0% to platinum</span></div>
+    <div class="progress-bar" role="progressbar" aria-label="Platinum progress"><div id="progressFill"></div></div>
+    <div class="grade-counts" id="gradeCounts"></div>
+  </div>
+  <nav class="tabs" aria-label="Views">
+    <button type="button" data-view="tracker" class="tab active">Tracker</button>
+    <button type="button" data-view="roadmap" class="tab">Roadmap to Platinum</button>
+    <button type="button" data-view="cleanup" class="tab">Missables &amp; Cleanup</button>
+  </nav>
+</header>
+
+<main>
+  <section id="view-tracker" class="view" aria-label="Trophy tracker">
+    <div class="strips">
+      <div class="nextup" id="nextUp" aria-live="polite"></div>
+      <div class="missable-warning" id="missableWarning" aria-live="polite"></div>
+    </div>
+    <div class="tracker-grid">
+      <div class="checklist-pane">
+        <div class="search-row">
+          <input id="search" type="search" placeholder="Search trophies, missions, characters&hellip;" aria-label="Search trophies">
+          <span id="resultCount" class="result-count"></span>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Filter by kind"></div>
+        <ul id="checklist" class="checklist"></ul>
+      </div>
+      <article class="detail-pane" id="detailPane" aria-live="polite"></article>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden aria-label="Roadmap to the platinum">
+    <p class="roadmap-intro" id="roadmapIntro"></p>
+    <div id="roadmapPhases" class="phases"></div>
+  </section>
+
+  <section id="view-cleanup" class="view" hidden aria-label="Missables and cleanup">
+    <div id="cleanupContent"></div>
+  </section>
+</main>
+
+<footer class="page-foot">
+  <p>Names, descriptions and grades are the official PlayStation list, as carried by Exophase and PSNProfiles. Every guide is written for this page in its own words; each step names the source behind it. The main walkthrough source is PowerPyx&rsquo;s GTA 6 Trophy Guide &amp; Roadmap. This guide is offline: it fetches nothing and saves progress only in your browser. Not affiliated with Rockstar Games; no Rockstar logo or artwork is used.</p>
+  <p class="foot-sources">Sources: <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a> &middot; <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase — GTA VI trophy list</a> &middot; <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles — GTA VI trophy list</a> &middot; GTABase (trophy list and tips)</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
